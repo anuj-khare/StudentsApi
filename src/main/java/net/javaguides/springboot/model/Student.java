@@ -7,13 +7,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
-
+import lombok.*;
 //@Data //->This annotation will generate getters setters hashcode tostring etc.(Lombok library)
 //I am not using lombok library since it was giving me a lot of errors .
 //please generate getters and setters manually
 
 @Entity //-> Makes this class a JPA entity
 @Table(name="students") //->specifies table name
+
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
